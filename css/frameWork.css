@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  outline: none;
+}
+:root {
+  --main-color: #5b5fc7;
+  --bg-main: #e4edf3;
+  --bg-second: #f2f6f9;
+  --bg-third: #cb482f;
+}
+
+body {
+  height: 140vh;
+  font-family: "Open Sans", sans-serif;
+}
+
+.flx {
+  display: flex;
+}
+
+.alert-tag {
+  position: relative;
+}
+
+.alert-tag::after {
+  position: absolute;
+  content: "5";
+  width: 14px;
+  height: 14px;
+  background-color: var(--bg-third);
+  bottom: -4px;
+  right: -7px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

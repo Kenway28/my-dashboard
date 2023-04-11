@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    /> 
+    <link rel="stylesheet" href="css/dycalendar.min.css" />
+    <link rel="stylesheet" href="css/frameWork.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/home.css" />
+   
+  </head>
+  <body>
+    <div class="container">
+      <header class="flx">
+        <h2>dashboard</h2>
+        <div class="header-icons flx">
+          <i class="fa-solid fa-search"></i
+          ><i class="fa-solid fa-bell alert-tag"></i>
+        
+          <div class="profile-box flx">
+            <img src="img/avatar.png" alt="" />
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+        </div>
+      </header>
+
+      <main class="flx">
+        <section class="navigation">
+          <ul>
+            <li class="list active">
+              <a href="#"> <i class="fa-solid fa-home"></i></a>
+            </li>
+            <li class="list">
+              <a href="pages/projects.html"> <i class="fa-solid fa-bars"></i></a>
+            </li>
+            <li class="list">
+              <a href="pages/calender.html"> <i class="fa-solid fa-calendar"></i></a>
+            </li>
+            <li class="list">
+              <a href="#"> <i class="fa-solid fa-chart-line"></i></a>
+            </li>
+
+            <li class="list">
+              <a href="pages/inbox.html"> <i class="fa-solid fa-envelope alert-tag"></i></a>
+            </li>
+            <li class="list">
+              <a href="#"> <i class="fa-solid fa-user"></i></a>
+            </li>
+            <li class="list">
+              <a href="#"> <i class="fa-solid fa-gear"></i></a>
+            </li>
+          </ul>
+        </section>
+        <div class="content">
+          <div class="content-box chart-1">
+            <div class="box flx">
+              <div class="item">
+                <svg viewBox="0 0 220 220">
+                  <circle
+                    shape-rendering="geometricPrecision"
+                    cx="110"
+                    cy="110"
+                    r="96"
+                  ></circle>
+                  <circle
+                    shape-rendering="geometricPrecision"
+                    class="indicator"
+                    style="--value: 470"
+                    cx="110"
+                    cy="110"
+                    r="96"
+                  ></circle>
+                </svg>
+              </div>
+              <h4><span>1500</span>views</h4>
+              <div class="item">
+                <svg viewBox="0 0 220 220">
+                  <circle
+                    shape-rendering="geometricPrecision"
+                    cx="110"
+                    cy="110"
+                    r="96"
+                  ></circle>
+                  <circle
+                    shape-rendering="geometricPrecision"
+                    class="indicator"
+                    style="--value: 135"
+                    cx="110"
+                    cy="110"
+                    r="96"
+                  ></circle>
+                </svg>
+              </div>
+              <h4><span>800</span>visitors</h4>
+              <div class="item">
+                <svg viewBox="0 0 220 220">
+                  <circle
+                    shape-rendering="geometricPrecision"
+                    cx="110"
+                    cy="110"
+                    r="96"
+                  ></circle>
+                  <circle
+                    shape-rendering="geometricPrecision"
+                    class="indicator"
+                    style="--value: 360"
+                    cx="110"
+                    cy="110"
+                    r="96"
+                  ></circle>
+                </svg>
+              </div>
+              <h4><span>3800</span>impressions</h4>
+            </div>
+          </div>
+          <div class="content-box projects">
+            <h3>your projects</h3>
+            <ul>
+              <li>
+                <img src="img/avatar.png" alt="" />
+                <h4>mobile app <span>kenway . $2000</span></h4>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </li>
+              <li>
+                <img src="img/avatar.png" alt="" />
+                <h4>new dashboard <span>kenway . $1500</span></h4>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </li>
+              <li>
+                <img src="img/avatar.png" alt="" />
+                <h4>landing page <span>kenway . $200</span></h4>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </li>
+              <li>
+                <img src="img/avatar.png" alt="" />
+                <h4>new website <span>kenway . $21000</span></h4>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </li>
+            </ul>
+          </div>
+          <div class="content-box chart-2"></div>
+          <div class="content-box" id="dycalendar"></div>
+          <div class="content-box inbox">
+            <h3>inbox (2)</h3>
+            <ul>
+              <li>
+                <img src="img/avatar.png" alt="" />
+                <div class="text">
+                  <h4>john doe</h3>
+                  <span>Today, 05:22 PM</span>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Incidunt alias atque architecto.
+                  </p>
+                </div>
+              </li><li>
+                <img src="img/avatar.png" alt="" />
+                <div class="text">
+                  <h4>john doe</h3>
+                  <span>Today, 05:22 PM</span>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Incidunt alias atque architecto.
+                  </p>
+                </div>
+              </li><li>
+                <img src="img/avatar.png" alt="" />
+                <div class="text">
+                  <h4>john doe</h3>
+                  <span>Today, 05:22 PM</span>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Incidunt alias atque architecto.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+   
+    <script src="js/index.js"></script>
+    <script src="js/dycalendar.js"></script>
+    <script>
+      dycalendar.draw({
+        target: "#dycalendar",
+        type: "month",
+        dayformat: "full",
+        monthformat: "full",
+        highlighttargetdate: true,
+        prevnextbutton:"show"
+      });
+    </script>
+  </body>
+</html>

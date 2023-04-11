@@ -1,0 +1,279 @@
+/* home content*/
+/* :root {
+  --main-color: #5b5fc7;
+  --bg-main: #e4edf3;
+  --bg-second: #f2f6f9;
+  --bg-third: #cb482f;
+} */
+.content {
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.content-box {
+  background-color: #fff;
+  border: 1px #ddd solid;
+}
+
+.content-box:first-of-type {
+  grid-column: span 8;
+  grid-row: span 2;
+}
+
+.content-box:nth-of-type(2) {
+  grid-column: span 3;
+  grid-row: span 2;
+}
+
+.content-box:nth-of-type(3) {
+  grid-column: span 5;
+  grid-row: span 2;
+}
+.content-box:nth-of-type(4) {
+  grid-column: span 3;
+  grid-row: span 2;
+}
+.content-box:nth-of-type(5) {
+  grid-column: span 3;
+  grid-row: span 2;
+}
+
+.chart-1 .box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 15px;
+}
+
+.chart-1 .box .item {
+  position: relative;
+  width: 70px;
+  height: 70px;
+}
+
+.chart-1 .box .item svg {
+  width: 100%;
+  height: 100%;
+}
+
+.chart-1 circle {
+  display: block;
+  fill: transparent;
+  stroke: #eee;
+  stroke-linecap: round;
+  stroke-dasharray: 600;
+  stroke-dashoffset: 0;
+  stroke-width: 15px;
+  transform-origin: 50% 50%;
+  transform: rotate(-90deg);
+}
+
+.indicator {
+  stroke: var(--main-color) !important;
+  stroke-dashoffset: var(--value) !important;
+  z-index: 2;
+}
+
+.item::after {
+  content: "50%";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  font-weight: 600;
+  color: var(--main-color);
+  font-size: 15px;
+}
+.chart-1 .box h4 {
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 500;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  color: #777;
+}
+
+.chart-1 .box h4 span {
+  font-weight: 700;
+  font-size: 22px !important;
+  color: #666;
+}
+
+.projects {
+}
+
+.projects h3 {
+  /* padding: 20px; */
+
+  text-transform: capitalize;
+  color: #555;
+  font-weight: 700;
+  background-color: #eff4f7;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.projects ul {
+  height: calc(100% - 65px);
+}
+
+.projects ul li {
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  height: 25%;
+}
+.projects ul li:not(:last-of-type) {
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.projects ul li img {
+  width: 40px;
+  margin-right: 15px;
+}
+.projects ul li h4 {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  text-transform: capitalize;
+  font-size: 14px;
+  flex: 1;
+  color: #444;
+}
+.projects ul li span {
+  color: #999;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.projects ul li i {
+  color: #777;
+  font-size: 14px;
+}
+
+.inbox h3 {
+  /* padding: 20px; */
+
+  text-transform: capitalize;
+  color: #555;
+  font-weight: 700;
+  background-color: #eff4f7;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.inbox ul {
+  height: calc(100% - 65px);
+}
+
+.inbox ul li {
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  height: calc(100% / 3);
+}
+
+.inbox ul li:not(:last-of-type) {
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.inbox ul li img {
+  width: 40px;
+  margin-right: 15px;
+}
+
+.inbox ul li .text {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.inbox ul li .text h4 {
+  font-weight: 500;
+  text-transform: capitalize;
+  font-size: 12px;
+  flex: 1;
+  color: #444;
+}
+.inbox ul li .text span {
+  font-weight: 500;
+  text-transform: capitalize;
+  font-size: 12px;
+  flex: 1;
+  color: var(--main-color);
+  text-align: right;
+}
+.inbox ul li .text p {
+  grid-column: span 2;
+  font-size: 12px;
+  font-weight: 500;
+  color: #888;
+}
+
+/*****************/
+#dycalendar {
+  width: 100%;
+}
+#dycalendar table {
+  width: 100%;
+  /* margin-top: 10px; */
+  padding: 20px;
+  /* border-spacing: 5px; */
+}
+
+#dycalendar table tr:nth-child(1) td {
+  background-color: #fff;
+  color: #555;
+  border-radius: 4px;
+  font-weight: 600;
+  text-align: center;
+  font-size: 18px;
+  padding-bottom: 15px;
+}
+
+#dycalendar table tr:not(:nth-child(1)) td {
+  color: #555;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 18px;
+  /* border: 1px solid #000; */
+
+  text-align: center;
+}
+#dycalendar table tr:not(:nth-child(1)) td:not(:empty):hover {
+  background-color: var(--main-color);
+  color: #fff !important;
+}
+.dycalendar-month-container .dycalendar-target-date,
+.dycalendar-month-container .dycalendar-today-date {
+  background-color: var(--main-color);
+  color: #fff !important;
+}
+
+.dycalendar-header {
+  padding: 20px;
+  text-transform: capitalize;
+  color: #555;
+  font-weight: 700;
+  background-color: #eff4f7;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+tbody tr {
+  margin-bottom: 100px !important;
+  color: green;
+}
